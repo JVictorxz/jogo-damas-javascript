@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damas Royale - Partida</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h2 id="status-turno">Vez: PRETA</h2>
+        <div class="placar">
+            ⚫ Pretas: <span id="placar-preta">12</span> | ⚪ Brancas: <span id="placar-branca">12</span>
+        </div>
+        
+        <div id="tabuleiro"></div>
+
+        <div class="menu-botoes">
+            <button onclick="location.reload()" class="btn-acao">🔄 Reiniciar</button>
+            <a href="home.html" class="btn-voltar">🏠 Menu Principal</a>
+        </div>
+        <div id="modal-vitoria" class="hidden">
+    <div class="modal-content">
+        <h1 id="titulo-vencedor">FIM DE JOGO</h1>
+        <p id="subtitulo-vencedor"></p>
+        <button onclick="location.reload()">Jogar Novamente</button>
+    </div>
+    <div id="chat-container">
+    <div id="chat-mensagens"></div>
+    <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Digite uma mensagem...">
+        <button id="btn-enviar-chat">Enviar</button>
+    </div>
+</div>
+</div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/online.js"></script>
+</body>
+</html>

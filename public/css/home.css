@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #2c3e50 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+h1 { color: white; font-size: 3rem; margin-bottom: 10px; }
+p { color: #aaa; margin-bottom: 40px; }
+
+.menu { display: flex; gap: 20px; flex-direction: column; }
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.2);
+    border-color: #3498db;
+}
+
+.icon { font-size: 2rem; margin-right: 20px; }
+.text { text-align: left; display: flex; flex-direction: column; }
+.text strong { color: white; font-size: 1.2rem; }
+.text span { color: #888; font-size: 0.9rem; }
